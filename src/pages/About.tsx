@@ -8,8 +8,17 @@ const About = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-hero text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="bg-gradient-hero text-white relative overflow-hidden py-20">
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/lovable-uploads/68d930a1-df1c-4722-aaa7-52714a54a2ea.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               About Vision
@@ -22,10 +31,10 @@ const About = () => {
       </section>
 
       {/* Mission & Values */}
-      <section className="py-20 bg-background">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <ScrollReveal>
                 <Card className="text-center shadow-card hover:shadow-elegant transition-all duration-500 hover:scale-105 group">
                   <CardContent className="p-8">
@@ -73,11 +82,11 @@ const About = () => {
       </section>
 
       {/* Company Story */}
-      <section className="py-20 bg-muted/50">
+      <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
-              <div className="text-center mb-16">
+              <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6">Our Story</h2>
                 <p className="text-xl text-muted-foreground">
                   Building the future of media, one innovation at a time
@@ -115,11 +124,11 @@ const About = () => {
       </section>
 
       {/* Subsidiaries */}
-      <section className="py-20 bg-background">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <ScrollReveal>
-              <div className="text-center mb-16">
+              <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6">Our Companies</h2>
                 <p className="text-xl text-muted-foreground">
                   Discover our family of innovative media brands

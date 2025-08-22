@@ -10,7 +10,15 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-hero text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div 
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('/lovable-uploads/68d930a1-df1c-4722-aaa7-52714a54a2ea.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
         <div className="container mx-auto px-4 py-24 lg:py-32 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <img 
