@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import visionLogo from "@/assets/vision-logo.png";
+const visionLogo = "/lovable-uploads/48474c0d-4b6c-450a-902d-12cb49cbe349.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
