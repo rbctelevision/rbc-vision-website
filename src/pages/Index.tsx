@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Monitor, Users, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
-import visionLogo from "@/assets/vision-logo.png";
+const visionLogo = "/lovable-uploads/48474c0d-4b6c-450a-902d-12cb49cbe349.png";
 
 const Index = () => {
   return (
